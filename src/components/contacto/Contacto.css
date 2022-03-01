@@ -1,0 +1,88 @@
+#contacto {
+  padding: 15rem 0;
+  flex-direction: column;
+}
+
+#contacto .formulario {
+  padding: 2rem;
+}
+
+#contacto .content-input,
+textarea {
+  padding: 0;
+  margin: 0;
+  max-width: 1200px;
+  padding: 12px 0px 12px 0px;
+  transition: all 0.2s ease-in;
+  font-size: 1.6rem;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 250px;
+  resize: none;
+}
+
+#contacto .content-input input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  transition: all 0.2s ease-in;
+  font-size: 1.6rem;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+}
+
+#contacto .content-input input #contacto .content-input input:focus,
+textarea:focus {
+  box-shadow: var(--box-shadow-forms);
+}
+
+#contacto .content-input input::placeholder,
+textarea::placeholder {
+  transition: all 0.3s ease;
+}
+
+#contacto .content-input input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+.btn-enviar {
+  background-color: var(--primary-color);
+  width: 100%;
+  border-radius: 50px;
+  padding: 0.6em 1.6em;
+  font-size: 1.8rem;
+  color: #fff;
+  transition: all 0.4s ease;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.error {
+  align-self: flex-start;
+  width: 100%;
+  color: red;
+  padding: 12px 0px 12px 2px;
+  font-size: 1.6rem;
+  width: fit-content;
+}
+
+.success-submit {
+  text-align: center;
+  padding: 10px 0;
+  color: green;
+  font-weight: bold;
+}

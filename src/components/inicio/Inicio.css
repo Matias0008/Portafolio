@@ -1,0 +1,77 @@
+#inicio {
+  min-height: 101vh;
+  padding-top: 85px;
+  background-color: var(--hero);
+  transition: background-color 0.3s ease;
+}
+
+#inicio .titulo h1 {
+  font-size: clamp(2rem, 12vw, 7rem);
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+  display: block;
+  position: relative;
+  width: fit-content;
+  font-family: Montserrat;
+}
+
+#inicio .titulo h1:nth-child(1) {
+  animation-delay: 1s;
+}
+
+#inicio .titulo h1:nth-child(2) {
+  animation-delay: 2s;
+}
+
+#inicio .titulo h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+#inicio .titulo h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+#inicio .titulo h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+#inicio .titulo h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+
+#inicio .titulo span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #dc143c;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes text_reveal_name {
+  100% {
+    color: crimson;
+    font-weight: 500;
+  }
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}

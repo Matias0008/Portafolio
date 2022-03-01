@@ -1,0 +1,55 @@
+#footer {
+  padding: 8rem 0;
+  flex-direction: column;
+  background: var(--hero);
+}
+
+footer {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.footer-item img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 1rem;
+}
+
+.footer-item .ciudad {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.footer-item a {
+  color: white;
+}
+
+.ciudad:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-item:last-child {
+  margin-top: 0.8rem;
+  font-size: 2.5rem;
+}
+
+.footer-item .last-link {
+  margin-left: 20px;
+}
+
+.footer-item:last-child svg {
+  transition: all 0.3s ease;
+}
+
+.footer-item:last-child svg:hover {
+  color: var(--primary-color);
+}

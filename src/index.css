@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+body {
+  background-color: var(--body-bg);
+  transition: all 0.3s ease;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: var(--scrollbg-hero);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--scroll-hero);
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--paragraph-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #5924ed;
+  --secondary-black: #0d081a;
+  --secondary-gray: #48464b;
+  --body-bg: #efebfa;
+  --box-shadow: 0px 0px 20px #4705fc33;
+  --box-shadow-forms: 0px 0px 20px #4705fc33;
+  --subtitle: black;
+  --paragraph-black: #0d081a;
+  --hero: #525252;
+  --btncolor: #5924ed;
+  --nav-toggle: rgba(51, 51, 51, 0.99);
+  --header: #3d3d3d;
+  --scroll-hero: red;
+  --scrollbg-hero: #525252;
+}
+
+.dark {
+  --body-bg: #191019;
+  --box-shadow: 0px 0px 20px #3e283e;
+  --box-shadow-forms: 0px 0px 15px blue;
+  --secondary-black: white;
+  --subtitle: white;
+  --secondary-gray: #cecace;
+  --paragraph-black: #cecace;
+  --hero: #1f1f1f;
+  --btncolor: white;
+  --nav-toggle: rgba(31, 31, 31, 0.99);
+  --header: #251825;
+  --scrollbg-hero: #1f1f1f;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.active {
+  color: red;
+}
